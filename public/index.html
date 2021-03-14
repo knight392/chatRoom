@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <linK rel='stylesheet' href='css/index.css' type='text/css'>
+    <linK rel='stylesheet' href='css/iconfont.css' type='text/css'>
+    <!--the css for jquery.mCustomScrollbar-->
+    <link rel="stylesheet" href="lib/css/jquery.mCustomScrollbar.min.css"/>
+    <!--the css for this plugin-->
+    <link rel="stylesheet" href="src/css/jquery.emoji.css"/>
+</head>
+
+<body>
+    <div id='loginBox'>
+        <p class='userName'>
+            <input type='text' id='loginUser' placeholder="用户名">
+        </p>
+        <table class='profileBox' id='profileBox'>
+            <tr>
+                <td><img src='image/profile/p (1).jpeg'></td>
+                <td><img src='image/profile/p (1).png'></td>
+                <td><img src='image/profile/p (2).png'></td>
+                <td><img src='image/profile/p (3).png'></td>
+                <td><img src='image/profile/p (11).jpeg'></td>
+                <td><img src='image/profile/p (12).jpeg'></td>
+            </tr>
+            <tr>
+                <td><img src='image/profile/p (13).jpeg'></td>
+                <td><img src='image/profile/p (14).jpeg'></td>
+                <td><img src='image/profile/p (15).jpeg'></td>
+                <td><img src='image/profile/p (16).jpeg'></td>
+                <td><img src='image/profile/p (17).jpeg'></td>
+                <td><img src='image/profile/p (18).jpeg'></td>
+            </tr>
+        </table>
+        <p>
+            <button id='loginBtn'>登录</button>
+        </p>
+    </div>
+    <!-- <h1>Hello World!</h1> -->
+    <div id='chatBox'>
+        <!-- 左边用户栏 -->
+        <div class='userList'>
+            <div class='userPlane' id='userPlane'>
+                <img src='' draggable="false">
+                <span></span>
+            </div>
+            <ul class='friendList' id='friendList'>
+                <!-- <li>
+                    <img src='image/profile/p (1).png'>
+                    <span>黄宇军</span>
+                </li>
+                <li>
+                    <img src='image/profile/p (2).png'>
+                    <span>黄宇军</span>
+                </li>
+                <li>
+                    <img src='image/profile/p (3).png'>
+                    <span>黄宇军</span>
+                </li>
+                <li>
+                    <img src='image/profile/p (2).png'>
+                    <span>黄宇军</span>
+                </li>
+                <li>
+                    <img src='image/profile/p (3).png'>
+                    <span>黄宇军</span>
+                </li>
+                <li>
+                    <img src='image/profile/p (2).png'>
+                    <span>黄宇军</span>
+                </li>
+                <li>
+                    <img src='image/profile/p (3).png'>
+                    <span>黄宇军</span>
+                </li>
+                <li>
+                    <img src='image/profile/p (2).png'>
+                    <span>黄宇军</span>
+                </li>
+                <li>
+                    <img src='image/profile/p (3).png'>
+                    <span>黄宇军</span>
+                </li> -->
+            </ul>
+        </div>
+        <!-- 右边聊天窗口 -->
+        <div class='chatPane'>
+            <div id='roomTitle'>
+                群聊(0)
+            </div>
+            <div id='view'>
+                <!-- <p class='systemMsg'>小强加入了群聊</p> -->
+                <!-- <div class='myMsg'>
+                    <img class='profile' src='image/profile/p (12).jpeg'>
+                    <div class='content'>欢迎欢迎</div>
+                </div>
+                <div class='otherMsg'>
+                    <img class='profile' src='image/profile/p (13).jpeg'>
+                    <span class='name'>小强</span>
+                    <div class='content'>大家好，我是小强！</div>
+                </div>
+                <div class='myMsg'>
+                    <img class='profile' src='image/profile/p (12).jpeg'>
+                    <div class='content'>欢迎欢迎</div>
+                </div>
+                <div class='otherMsg'>
+                    <img class='profile' src='image/profile/p (13).jpeg'>
+                    <span class='name'>小强</span>
+                    <div class='content'>大家好，我是小强！</div>
+                </div>
+                <div class='myMsg'>
+                    <img class='profile' src='image/profile/p (12).jpeg'>
+                    <div class='content'>欢迎欢迎</div>
+                </div>
+                <div class='otherMsg'>
+                    <img class='profile' src='image/profile/p (13).jpeg'>
+                    <span class='name'>小强</span>
+                    <div class='content'>大家好，我是小强！</div>
+                </div> -->
+            </div>
+            <div class='textArea'>
+                <div class='toolBar'>
+                    <i class='iconfont icon-biaoqing' id='faceBtn'></i>
+                    <i class='iconfont icon-tupian' id='imgBtn'></i><input style='display:none' type='file'
+                        id='selectFile'>
+                </div>
+                <div type='text' id='text' contenteditable="true"></div> <button id='send'>发送</button>
+            </div>
+        </div>
+    </div>
+    <!-- 只能运行在服务器上，本地上是找不到这个socket.io.client -->
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='js/jquery-3.5.1.js'></script>
+    <script src="js/jquery.js"></script>
+    <script src="lib/script/jquery.mousewheel-3.0.6.min.js"></script>
+    <!--the js for jquery.mCustomScrollbar-->
+    <script src="lib/script/jquery.mCustomScrollbar.min.js"></script>
+    <!--the js for this plugin-->
+    <script src="src/js/jquery.emoji.js"></script>
+    <script src='js/index.js'></script>
+</body>
+
+</html>

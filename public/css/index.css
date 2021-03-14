@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size:14px;
+}
+
+body{
+    background-image:url("../image/2zrdI1g.jpg");
+    background-size:cover;
+}
+/* 登录盒子 */
+#loginBox{
+    display:block;
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    padding:5px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* 用户名 */
+#loginBox p{
+    margin-top:20px;
+    text-align: center;
+    line-height: 50px;
+    color:#666;
+    font-size:16px;
+}
+#loginBox #loginUser{
+    display: inline-block;
+    line-height: 35px;
+    width:380px;
+    padding-left:10px;
+    outline: none;
+    color:#666;
+    font-size:16px;
+    border:1px solid #666;
+}
+
+
+/* 头像 */
+
+.profileBox{
+    margin-top:50px;
+    border:1px solid #666;
+}
+#loginBox img{
+    width:60px;
+    height: 60px;
+    border-radius: 2px;
+    border:1px solid #fff;
+    cursor: pointer;
+}
+#loginBox img.now{
+    border:1px solid greenyellow;
+    box-sizing: 2px greenyellow;
+}
+#loginBox img:hover{
+    border:1px solid greenyellow;
+    box-sizing: 5px greenyellow;
+}
+
+/* 登录按钮 */
+#loginBtn{
+    width:80px;
+    text-align: center;
+    line-height: 35px;
+    color:#666;
+    background-color: #fff;
+    border-radius: 5px;
+    border:1px solid #666;
+}
+#loginBtn:hover{
+    background-color: rgb(97, 131, 63);
+    color:#fff;
+    border:1px solid #fff;
+}
+
+/* 聊天面板 */
+
+#chatBox{
+    display: none;
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width:1100px;
+    background-color:#fff;
+    border:1px solid #666;
+}
+#chatBox::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+/* 用户列表 */
+#chatBox .userList{
+    float: left;
+    height: 100%;
+    width:300px;
+    padding:5px;
+    color:#fff;
+    background-color: rgb(33, 41, 44);
+}
+/* 用户头像 */
+#chatBox .userList img{
+    width:60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+#chatBox .friendList{
+    margin-top:30px;
+    height: 500px;
+    overflow-y:auto;
+    list-style: none;
+    border-top:1px solid #999;
+}
+.friendList::-webkit-scrollbar{
+    width:5px;
+    height: 5px;
+}
+.friendList::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #555;
+}
+.friendList::-webkit-scrollbar-track{
+    border-radius: 0;
+    background-color:transparent;
+}
+#chatBox .friendList li{
+    padding-top:7px;
+}
+
+/* 用户名 */
+#chatBox .userList span{
+    margin-left:10px;
+    font-size:17px;
+}
+
+/* 聊天视图 */
+.chatPane{
+    float: right;
+    width:780px;
+}
+/* 标题 */
+.chatPane #roomTitle{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size:22px;
+    color:#666;
+}
+/* 头像 */
+#view{
+    height: 462px;
+    padding-bottom:20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #F5F5F5;
+    
+}
+#view::-webkit-scrollbar{
+    width:5px;
+    height: 5px;
+}
+#view::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #ddd;
+}
+#view::-webkit-scrollbar-track{
+    border-radius: 0;
+    background-color:transparent;
+}
+#view .profile{
+    width:60px;
+    height: 60px;
+    border-radius: 2px;
+    border:1px solid #fff;
+    cursor: pointer;
+}
+/* 系统消息 */
+#view .systemMsg{
+    margin-top:20px;
+    text-align: center;
+    color:#999;
+}
+/* 聊天消息 */
+#view .content{
+    padding:5px;
+    min-height: 60px;
+    box-sizing: border-box;
+    font-size:17px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#view .content img{
+    max-width: 200px;
+}
+/* 我的消息 */
+#view .myMsg{
+    margin-top:20px;
+    overflow: hidden;
+}
+#view .myMsg .profile{
+    float: right;
+    margin-right: 10px;
+}
+
+#view .myMsg .content{
+    float:right;
+    margin-right:10px;
+    background-color: #9EEA6A;
+    color:#000;
+    border-top-left-radius: 10px;
+}
+
+
+/* 别人的消息 */
+#view .otherMsg{
+    position: relative;
+    margin-top:20px;
+    margin-bottom:40px;
+   
+}
+#view .otherMsg .profile{
+    float: left;
+    margin-left:10px;
+}
+
+#view .otherMsg .name{
+    position: absolute;
+    left:80px;
+    top:0px;
+    color:#666;
+}
+
+
+#view .otherMsg .content{
+    float:left;
+    position: relative;
+    top:30px;
+    margin-left:10px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    color:#000;
+    border-top-right-radius: 10px;
+}
+#view .otherMsg::after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+/* 工具栏 */
+.chatPane .toolBar i{
+    margin-left:10px;
+    cursor: pointer;
+}
+
+
+/* 输入框 */
+.chatPane #text{
+    display: inline-block;
+    height: 67px;
+    width:690px;
+    outline:none;
+    padding:5px;
+    padding-left:20px;
+    font-size:16px;
+    color:#333;
+    overflow-y:auto;
+    box-sizing:border-box;
+}
+.chatPane #text img{
+    max-height: 60px;
+}
+
+.chatPane #text::-webkit-scrollbar{
+    width:5px;
+    height: 5px;
+}
+.chatPane #text::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #ddd;
+}
+.chatPane #text::-webkit-scrollbar-track{
+    border-radius: 0;
+    background-color:transparent;
+}
+
+/* 发送按钮 */
+.chatPane #send{
+    background-color: #f5f5f5;
+    position: relative;
+    top:-10px;
+    padding:5px;
+    width:60px;
+    outline: none;
+    font-size:16px;
+    border:none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.chatPane #send:hover{
+    background-color: #129611;
+   
+    color:#fff;
+}
+
+
+
+
+
+
+

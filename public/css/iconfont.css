@@ -1,0 +1,26 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1614351737660'); /* IE9 */
+  src: url('iconfont.eot?t=1614351737660#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOoAAsAAAAAB/gAAANbAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDXIMmATYCJAMMCwgABCAFhG0HOxvxBhHVm4fIfhymW4x8E/PA+yyd2in+Owiwrqp0sn29pE/GzIF6WX5PACzOOXUyKkKN5OzJoy8kbUfps+zww/1MF6Wzj6sHNJeM5FEAjls3kIi4KjrRO5AD8hvGbqI8iMsQgA0BxCHKKuo2xUABZglA9O3VoxNGSouqKRQYCPSSjQoxHysMbYZ2DZjHf198JUUYoGElAQsbdi/vStEHvvyRJouJthQFbzwzoG0DCcQBCkT7UmtLZBiNQ2LjSFV9po5CoI0VsFg415XrK/3H00DogHw7AKLEmAYfwGYEZ8YTY2jA+dtB79G9ALg7QikYKG9nOwEH2Fu7+gjrTjObPxCQB+YWD5GHs5rdR+6bmt5z3Rs98x4gme6TZj0kmR+8oPn9983uvWv64EPzhx9b2Zi2H551dKdYeWLmsU6JIeYdR2Ye2tbq3r2mDb/p4ZwxDvtu+WmL3VlzO93x4N1AufZOX8dZm9FWnojZEnau6XK3HQ8KttzL2xQnzVs72aw4PuukeaRlluHULqJVRHlZRWXtgasRcf9l5ZUVB2qvlgzSm7zvsrd69uzqvRcQi7Gi6gtmSWfnxwqC1GOoDgoiwnih0b7aLcg10jXJzWFGwYonATI6yRwUFUxLkxfEiCYr+w0VkCWeJJoEN3xF0sZLrh1T9b0eHp56asdI9Ii/S3aGq2OZY7t/ucnD/nrk13tz8lK7/m/2FrkFxmbGOJXemFpoE5Iho0JtBAH8srt2+V/+DSey7DZ3cMz7b9gqAJ51SBglT7GYFNIEGHdqE/DneC0rlCsAOqlsLub6CUlrjPfCFtm6jP9VDODCi/5y99ZkEHL3GDTq4A8SgzC0wseBFbakgY5BIdgQS+V2W1wZjEQoayCGKQIInNgJGg6cBIkT19EK/xys8OA76DgJCTY0F64H2hIh3HQ4ChpFD/YPyfFMyKCHoPCGYR2NJAWc8kJZUgCass4mrjijjLFk+YRWlYCEJ7gI1+E4MmThHp2WUTV3VUVlX1Q6nooDR0Gj6MH+ITmeidbXQ+7nbxjW0UhNWYf5hbKk3qEp6xboq3RuVXYtL1k+oVUlIOEJLoIZRxhlyOXjenRaxh7h3FVSLWorLeeXT8+3AbABPEIKTUih2HVOht9pDhtdczJzUQAA') format('woff2'),
+  url('iconfont.woff?t=1614351737660') format('woff'),
+  url('iconfont.ttf?t=1614351737660') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1614351737660#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 30px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-biaoqing:before {
+  content: "\e600";
+  font-size:24px;
+}
+
+.icon-tupian:before {
+  content: "\eaf2";
+}
+
